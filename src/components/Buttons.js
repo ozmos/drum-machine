@@ -3,7 +3,7 @@ import Audio from './Audio';
 import getIdString from './getIdString';
 
 const style = {
-    width: 50
+    width: 70
 };
 
 const Buttons = props => {
