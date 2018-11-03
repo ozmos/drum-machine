@@ -1,21 +1,14 @@
 import React from 'react';
-
-const style = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    border: '1px solid red'
-};
+import './styles/display.css';
 
 const Display = props => {
     return (
-        <div id="display" style={style}>
+        <div id="display" className="display">
             <span>{props.display}</span>
             <h3>{
                 props.title ? props.title : 'Boom bap pow'}
             </h3>
-            <button style={{width: 100}} onClick={props.kitCycle} >change kit</button>
+            <button className='toggle_button' onClick={props.kitCycle} >change kit</button>
         </div>
         );
 };

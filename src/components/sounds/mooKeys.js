@@ -3,6 +3,6 @@ import keySoundsObj from './keySoundsObj';
 
 const keys = ['s', 'd', 'f', 'j', 'k', 'l'];
 const title = 'Moo Kit';
-
-const mooKeys = keySoundsObj(title, keys, mooSounds);
+const subtitle = 'Mooooo';
+const mooKeys = keySoundsObj(title, subtitle, keys, mooSounds);
 export default mooKeys;

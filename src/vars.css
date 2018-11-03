@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Permanent+Marker|Righteous|Spicy+Rice');
+ :root {
+    /*color schemes*/
+    --background_0: #512DA8;
+    --color_0: gold;
+    --background_1: #00796B;
+    --color_1: white;
+    --background_2: #1976D2;
+    --color_2: white;
+    --background_3: #795548;
+    --color_3: white;
+    /*font families*/
+    --font_0: 'Righteous', cursive;
+    --font_1: 'Permanent Marker', cursive;
+    --font_2: 'Luckiest Guy', cursive;
+    --font_3: 'Spicy Rice', cursive;
+    /*sizes*/
+    --button_size: 60px;
+}

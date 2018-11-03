@@ -1,0 +1,11 @@
+.display {
+    padding: 30px;
+}
+
+.toggle_button {
+    padding: 5px;
+    margin: 10px;
+    background: inherit;
+    color: inherit;
+    font-family: monospace;
+}

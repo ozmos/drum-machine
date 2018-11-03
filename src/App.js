@@ -1,6 +1,3 @@
-//todo: line 59 - change title prop to respond to changes in kit state
-//      handleKeyPress - change all references to specific kits
-//     there are more tasks, just can't remember right now 
 import React, { Component } from 'react';
 import './App.css';
 import Pads from './components/Pads';
@@ -8,6 +5,9 @@ import { connect } from 'react-redux';
 import Display from './components/Display';
 import getIdString from './components/getIdString';
 import soundArray from './components/sounds/soundArray';
+import Head from './components/Head';
+import './vars.css';
+import './resets.css';
 
 class App extends Component {
   constructor(props) {
@@ -40,24 +40,27 @@ class App extends Component {
   handleKeyPress(event) {
     if (document.getElementById('Spacebar') && event.key  === ' ') {
       this.playClip('Spacebar');
-      this.props.upDateDisplay(getIdString(soundArray[this.props.kit]['Spacebar']));
+      this.props.upDateDisplay(getIdString(soundArray[this.props.kit].array['Spacebar']));
     } else if (document.getElementById(event.key)){
     this.playClip(event.key);
     //todo update getIdString args
-    this.props.upDateDisplay(getIdString(soundArray[this.props.kit][event.key]));
+    this.props.upDateDisplay(getIdString(soundArray[this.props.kit].array[event.key]));
     } else return;
   }  
   playClip(id) {
       document.getElementById(id).play();
   }
   render() {
-    const keys = soundArray[this.props.kit];
+    const keys = soundArray[this.props.kit].array;
+    const appClass = soundArray.map((obj, i) => 'App_'+ i); 
+    const subtitle = soundArray[this.props.kit].subtitle;
     return (
-      <div id="drum-machine" style={{ border: "1px solid blue", height: 500, width: 500, textAlign: 'center' }}>
-        <h1>React Drum Machine</h1>
-        <h2>boom bap pow</h2>
-        <Pads keys={keys} handleClick={this.handleClick} />
-        <Display display={this.props.display} kit={this.props.kit} title={soundArray[this.props.kit]['title']} kitCycle={this.nextKit}/>
+      <div className={['App', appClass[this.props.kit]].join(' ')} id="drum-machine">
+        <div className='container'>
+            <Head title='React-Redux Drum Machine' subtitle={subtitle}/>
+            <Pads keys={keys} handleClick={this.handleClick} />
+            <Display display={this.props.display} kit={this.props.kit} title={soundArray[this.props.kit]['title']} kitCycle={this.nextKit}/>
+        </div>
       </div>
 
     );

@@ -1,0 +1,12 @@
+.button {
+    width: var(--button_size);
+    height: var(--button_size);
+    background: inherit;
+    margin: 5px;
+    font-family: inherit;
+    color: inherit;
+}
+
+.buttonSpacebar {
+    width: 500px;
+}
