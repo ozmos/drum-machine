@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d3a105fc23aae1986da5bcb24ef203e9",
-    "url": "/drum-machine/static/media/vox_breathy_rhythm.d3a105fc.mp3"
+    "revision": "8e681d569368690de60336cd8c872d74",
+    "url": "/drum-machine/static/media/vox_crash.8e681d56.mp3"
   },
   {
-    "revision": "c43f18af41398979236f",
-    "url": "/drum-machine/static/css/main.c3e81fc6.chunk.css"
+    "revision": "80d85f3f24f8040dcc77",
+    "url": "/drum-machine/static/css/main.8eb788b9.chunk.css"
   },
   {
     "revision": "807718b7273909d8b600",
@@ -52,10 +52,6 @@ self.__precacheManifest = [
     "url": "/drum-machine/static/media/kick1.73bcfd50.mp3"
   },
   {
-    "revision": "5fb3291308567efbe66b50b31fd2ffdc",
-    "url": "/drum-machine/static/media/kick2.5fb32913.mp3"
-  },
-  {
     "revision": "9134df441e14a7cf62e04655340668d9",
     "url": "/drum-machine/static/media/maracas.9134df44.mp3"
   },
@@ -84,12 +80,12 @@ self.__precacheManifest = [
     "url": "/drum-machine/static/media/vox_bd.f3eb46d4.mp3"
   },
   {
-    "revision": "c43f18af41398979236f",
-    "url": "/drum-machine/static/js/main.c43f18af.chunk.js"
+    "revision": "d3a105fc23aae1986da5bcb24ef203e9",
+    "url": "/drum-machine/static/media/vox_breathy_rhythm.d3a105fc.mp3"
   },
   {
-    "revision": "8e681d569368690de60336cd8c872d74",
-    "url": "/drum-machine/static/media/vox_crash.8e681d56.mp3"
+    "revision": "80d85f3f24f8040dcc77",
+    "url": "/drum-machine/static/js/main.80d85f3f.chunk.js"
   },
   {
     "revision": "176f356be1e84dc647521d86b25debd3",
@@ -168,7 +164,7 @@ self.__precacheManifest = [
     "url": "/drum-machine/static/media/Tin.41fb1121.mp3"
   },
   {
-    "revision": "e8d9db6adaa9b01f146dec6c12b84ca4",
+    "revision": "fff039da22611ba31f786c9c0ec3b3a3",
     "url": "/drum-machine/index.html"
   }
 ];
