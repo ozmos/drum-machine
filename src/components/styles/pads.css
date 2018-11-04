@@ -1,5 +1,10 @@
 .pads {
     max-width: 100%;
     padding: 30px;
-    border: 1px solid grey;
+}
+
+@media (max-height: 480px) {
+    .pads {
+        padding: 10px;
+    }
 }

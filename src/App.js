@@ -6,8 +6,10 @@ import Display from './components/Display';
 import getIdString from './components/getIdString';
 import soundArray from './components/sounds/soundArray';
 import Head from './components/Head';
+import Footer from './components/Footer';
 import './vars.css';
 import './resets.css';
+import './components/styles/footer.css';
 
 class App extends Component {
   constructor(props) {
@@ -61,6 +63,7 @@ class App extends Component {
             <Pads keys={keys} handleClick={this.handleClick} />
             <Display display={this.props.display} kit={this.props.kit} title={soundArray[this.props.kit]['title']} kitCycle={this.nextKit}/>
         </div>
+        <Footer author="Osamu Morozumi" />
       </div>
 
     );

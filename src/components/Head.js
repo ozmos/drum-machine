@@ -4,8 +4,8 @@ import './styles/head.css';
 const Head = props => {
     return (
     <div className='head'>
-        <h1>{props.title}</h1>
-        <h2>{props.subtitle}</h2>
+        <h1 className='title'>{props.title}</h1>
+        <h2 className='subtitle'>{props.subtitle}</h2>
     </div>
       );
 };
