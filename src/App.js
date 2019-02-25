@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
 import Pads from './components/Pads';
 import { connect } from 'react-redux';
 import Display from './components/Display';
